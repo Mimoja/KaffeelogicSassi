@@ -58,26 +58,27 @@ func (r ConnectionRequest) ParsePipedFields() FullSassiMessage {
 	r.Sassi_version = uint8(sVersion)
 	r.Model_number = r.Piped_fields[4]
 	r.Manufacturer_domain = r.Piped_fields[5]
-	//r.Description = r.Piped_fields[6]
+	r.Description = r.Piped_fields[6]
 
-	max_pack, err := strconv.ParseUint(r.Piped_fields[6], 10, 32)
+	max_pack, err := strconv.ParseUint(r.Piped_fields[7], 10, 32)
 	if err != nil {
 		panic(err)
 	}
 	r.Max_packet_size = uint32(max_pack)
 
-	max_name, err := strconv.ParseUint(r.Piped_fields[7], 10, 32)
+	max_name, err := strconv.ParseUint(r.Piped_fields[8], 10, 32)
 	if err != nil {
 		panic(err)
 	}
 	r.Max_filename_size = uint32(max_name)
 
 	// CRC inital is hex!
-	crci, err := strconv.ParseUint(r.Piped_fields[8], 16, 16)
+	crci, err := strconv.ParseUint(r.Piped_fields[9], 16, 16)
 	if err != nil {
 		panic(err)
 	}
 	r.Crc_initial = uint16(crci)
+
 	return r
 }
 
@@ -105,6 +106,7 @@ func (r ConnectionRequest) String() string {
 		strconv.Itoa(int(r.Sassi_version)),
 		r.Model_number,
 		r.Manufacturer_domain,
+		r.Description,
 		strconv.Itoa(int(r.Max_packet_size)),
 		strconv.Itoa(int(r.Max_filename_size)),
 		strconv.FormatInt(int64(r.Crc_initial), 16),
