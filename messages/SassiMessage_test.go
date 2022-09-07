@@ -14,7 +14,7 @@ func dev() *SassiDev {
 		Max_payload_size:    512,
 		Manufacturer_code:   "KL",
 		Crc_table:           crc16.MakeTable(param),
-		Serial_number:       "C50009",
+		Serial_number:       "C35315",
 		Max_filename_size:   192,
 		Model_number:        "KN1007B",
 		Manufacturer_domain: "kaffelogic.com",
@@ -44,30 +44,37 @@ func TestPacketAck(t *testing.T) {
 }
 
 func TestConnectionRequest(t *testing.T) {
+	dev := dev()
 	reference := ConnectionRequest{
 		SassiMessage: SassiMessage{
 			Manufacturer_code: "KL",
 			Message_type:      CONNECTION_REQUEST,
-			Crc:               0xf045,
-			Timestamp:         "2d3c9",
+			Crc:               0xfec0,
+			Timestamp:         "2a3e2f",
 			Piped_fields:      []string{},
 		},
 		Platform_code:       1,
 		Capabilities:        "0",
-		Serial_number:       "C50009",
+		Serial_number:       "C35315",
 		Sassi_version:       1,
 		Model_number:        "KN1007B",
 		Manufacturer_domain: "kaffelogic.com",
 		Description:         "",
 		Max_packet_size:     512,
 		Max_filename_size:   192,
-		Crc_initial:         0x8241,
+		Crc_initial:         0x861a,
 	}
-	new_m := NewConnectionRequest(dev(), 0x2d3c9, 1, "0", 1, 0x8241)
-	should_s := "KL*2|2d3c9|1|0|C50009|1|KN1007B|kaffelogic.com|512|192|8241|f045"
+	should_s := "KL*2|2a3e2f|1|0|C35315|1|KN1007B|kaffelogic.com||512|192|861a|fec0"
 
-	msg, _ := dev().Parse(should_s)
+	msg, _ := dev.Parse(should_s)
 	cMsg := msg.(ConnectionRequest)
+	assert.Equal(t, cMsg.Crc_initial, uint16(0x861a))
+	assert.Equal(t, dev.Crc_inital, uint16(0x861a))
+	assert.Equal(t, dev.Max_payload_size, uint32(512))
+	assert.Equal(t, dev.Max_filename_size, uint32(192))
+
+	new_m := NewConnectionRequest(dev, 0x2a3e2f, 1, "0", 1, 0x861a)
+
 	cMsg.ClearPipedFields()
 	assert.Equal(t, reference, cMsg)
 	assert.Equal(t, reference, new_m)
