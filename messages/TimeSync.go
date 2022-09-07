@@ -5,7 +5,6 @@ import (
 	"strconv"
 	"strings"
 	"time"
-	"unsafe"
 )
 
 type TimeSync struct {
@@ -61,5 +60,5 @@ func (r TimeSync) String() string {
 		r.CurrentDate,
 		strconv.Itoa(int(r.sassi_version)),
 	}
-	return (*((*SassiMessage)(unsafe.Pointer(&r)))).String()
+	return r.SassiMessage.String()
 }
