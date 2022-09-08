@@ -7,12 +7,11 @@ import (
 type NotifyStatusAck struct {
 	SassiMessage
 	_reserved string
-	InfoCode  uint8
-	Serial    string
+	InfoCode  InfoType
 }
 
 func NewNotifyStatusAck(dev *SassiDev, timestamp int64,
-	InfoCode uint8,
+	InfoCode InfoType,
 ) NotifyStatusAck {
 	cr := NotifyStatusAck{
 		SassiMessage: NewSassiMessage(dev, timestamp, NOTIFY_STATUS_ACK),
@@ -29,8 +28,7 @@ func (r NotifyStatusAck) ParsePipedFields() FullSassiMessage {
 	if err != nil {
 		panic(err)
 	}
-	r.InfoCode = uint8(oCode)
-	r.Serial = r.Piped_fields[0]
+	r.InfoCode = InfoType(oCode)
 	return r
 }
 
@@ -38,7 +36,6 @@ func (r NotifyStatusAck) String() string {
 	r.Piped_fields = []string{
 		r._reserved,
 		strconv.Itoa(int(r.InfoCode)),
-		r.Serial,
 	}
 	return r.SassiMessage.String()
 }

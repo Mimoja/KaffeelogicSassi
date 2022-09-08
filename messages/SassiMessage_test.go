@@ -152,24 +152,39 @@ func TestDirListRequest(t *testing.T) {
 	assert.Equal(t, should_s, new_m.String(), "Failure when emitting message")
 }
 
-func TestDirListResponse(t *testing.T) {
+func TestDirListResponseForFile(t *testing.T) {
+	dirListEntries := []DirListEntry{
+		{
+			Directory:  false,
+			Name:       "log0001.klog",
+			ChangeDate: time.Date(2002, time.January, 1, 1, 1, 0, 0, time.UTC),
+			Size:       4346,
+		},
+		{
+			Directory:  true,
+			Name:       "roast-logs",
+			ChangeDate: time.Time{},
+			Size:       0,
+		},
+	}
+
 	reference := DirListResponse{
 		SassiMessage: SassiMessage{
 			Manufacturer_code: "KL",
 			Message_type:      DIR_LIST_RESPONSE,
-			Crc:               0x1ee7,
-			Timestamp:         "1268",
+			Crc:               0x8d07,
+			Timestamp:         "3ed",
 			Piped_fields:      []string{},
 		},
-		DirPath:        "",
+		DirPath:        "kaffelogic/dummy",
 		Outcome_code:   128,
 		formatCode:     1,
-		SequenceNumber: 2,
-		Data:           []byte("roast-profiles"),
+		SequenceNumber: 1,
+		Data:           dirListEntries,
 	}
 
-	new_m := NewDirListResponse(dev(), 0x1268, "", 128, 2, []byte("roast-profiles"))
-	should_s := "KL*6|1268||128|1|2|cm9hc3QtcHJvZmlsZXM=|1ee7"
+	new_m := NewDirListResponse(dev(), 0x3ed, "kaffelogic/dummy", 128, 1, dirListEntries)
+	should_s := "KL*6|3ed|kaffelogic/dummy|128|1|1|IAlsb2cwMDAxLmtsb2cJMjAwMjAxMDEyMDEwMTAwCTQzNDYNPglyb2FzdC1sb2dzCQkN|8d07"
 
 	msg, _ := dev().Parse(should_s)
 	cMsg := msg.(DirListResponse)
@@ -321,3 +336,10 @@ func TestFileDeleteAck(t *testing.T) {
 	assert.Equal(t, reference, new_m)
 	assert.Equal(t, should_s, new_m.String(), "Failure when emitting message")
 }
+
+/*
+InfoRequest
+ KL*14|461|mains_voltage:227.906586;mains_freq:50.000000;ambient_temperature:24.562500;ambient_source:1;heater_power_available:1480.707886;log_counter:1;motor_hours:0.002778;heater_hours:0.001389;calibration_data:1.000000,1.000000,1.000000,1.000000|5|3e1e
+
+
+*/

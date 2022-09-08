@@ -1,31 +1,41 @@
 package main
 
 import (
-	"encoding/json"
-	"os"
+	"github.com/hedhyw/Go-Serial-Detector/pkg/v1/serialdet"
+	"github.com/tarm/serial"
+	"log"
 	"serial_test/messages"
 	"strings"
+	"time"
 )
 
 func main() {
-	connectionRequest := "KL*2|2d3c9|1|0|C50009|1|KN1007B|kaffelogic.com|512|192|8241|f045\n" +
-		"KL*4|f0b|3f56\n" + // Time sync ack
-		"KL*20|123|990d\n" + // Time sync ReQ
-		"KL*4|f0b|3f56\n" // Time sync ack
 
-	r := strings.NewReader(connectionRequest)
+	port := ""
+	if list, err := serialdet.List(); err == nil {
+		for _, p := range list {
+			log.Print(p.Description(), " ", p.Path())
+			if strings.Contains(p.Description(), "Raspberry") {
+				port = p.Path()
+			}
+		}
+	}
+	config := &serial.Config{
+		Name:        port,
+		Baud:        115200,
+		ReadTimeout: 1,
+		Size:        8,
+	}
 
-	dev := messages.SassiDev{}
-	dev.Listen(r)
+	stream, err := serial.OpenPort(config)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer stream.Close()
 
-	enc := json.NewEncoder(os.Stdout)
-	enc.SetIndent("", " ")
-	dlr := messages.NewDirListRequest(&dev, 0x1218, "kaffelogic/roast-logs")
-	println(dlr.String())
-	enc.Encode(dlr)
+	dev := messages.SassiDev{
+		StartTime: time.Now(),
+	}
 
-	nfr := messages.NewFileRequest(&dev, 0x1250, "roast-profiles/00032.kpro")
-	println(nfr.String())
-	enc.Encode(nfr)
-
+	dev.Listen(stream, stream)
 }

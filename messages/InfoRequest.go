@@ -7,12 +7,12 @@ import (
 type InfoRequest struct {
 	SassiMessage
 	InfoData string
-	InfoCode uint8
+	InfoCode InfoType
 }
 
 func NewInfoRequest(dev *SassiDev, timestamp int64,
 	InfoData string,
-	InfoCode uint8,
+	InfoCode InfoType,
 ) InfoRequest {
 	cr := InfoRequest{
 		SassiMessage: NewSassiMessage(dev, timestamp, INFO_REQUEST),
@@ -29,7 +29,7 @@ func (r InfoRequest) ParsePipedFields() FullSassiMessage {
 	if err != nil {
 		panic(err)
 	}
-	r.InfoCode = uint8(oCode)
+	r.InfoCode = InfoType(oCode)
 	return r
 }
 

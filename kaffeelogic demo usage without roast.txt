@@ -1,0 +1,491 @@
+
+
+queued info_request 
+Sent: info_request KL*13|31d16||3|2095 at 204055
+Recv: info_response KL*14|31d15|model:KN1007B;configuration:E;style:Standard;serial:C35315;platform:RP2040;board:7.5;bootloader:6;firmware:7.7.10.1548|3|e815... at 204086
+queued dir_list_request kaffelogic/roast-profiles  at 232900
+queued call_after  at 232900
+queued call_after  at 232900
+queued dir_list_request kaffelogic/roast-logs  at 232900
+queued call_after  at 232900
+queued call_after  at 232900
+queued info_request 
+queued call_after  at 232900
+Sent: dir_list_request KL*5|38dc8|kaffelogic/roast-profiles||1|dd21 at 232905
+Recv: dir_list_response KL*6|38dea|kaffelogic/roast-profiles|0|1|1|IAkwLTEyMDBtIFJURCB2MS4wLmtwcm8JMjAyMjA5MDczMTIzNTMzCTI4MDgNIAkwLTEyMDBtIFJlc3QgdjEuMC5rcHJvCTIwM... at 232983
+Recv: dir_list_response KL*6|38dfc|kaffelogic/roast-profiles|128|1|2|IAkyMDAwLTI3MDBtIFJURCB2MS4wLmtwcm8JMjAyMjA5MDczMTIzNTMzCTI4MDUNIAkyMDAwLTI3MDBtIFJlc3QgdjEuMC5... at 232998
+decoded:
+  	0-1200m RTD v1.0.kpro	202209073123533	2808
+ 	0-1200m Rest v1.0.kpro	202209073123533	2806
+ 	1200-1500 m Rest v1.0.kpro	202209073123533	2883
+ 	1200-1500m RTD v1.0.kpro	202209073123533	2703
+ 	1500-2000m RTD v1.0.kpro	202209073123533	2732
+ 	1500-2000m Rest v1.0.kpro	202209073123533	2880
+ 	2000-2700m RTD v1.0.kpro	202209073123533	2805
+ 	2000-2700m Rest v1.0.kpro	202209073123533	2749
+ 	Cupping v1.0.kpro	202209073123533	2500
+ 	Decaf v1.0.kpro	202209073123533	2718
+ 	Robusta v1.0.kpro	202209073123533	2609
+ 	Super dark v1.0.kpro	202209073123533	2380
+Sent: dir_list_request KL*5|38e45|kaffelogic/roast-logs||1|cfe0 at 233030
+Recv: dir_list_response KL*6|38e4f|kaffelogic/roast-logs|128|1|1|IAlsb2cwMDAxLmtsb2cJMjAwMjAxMDExMDEwMTAwCTQzNDYN|b5b6 at 233061
+decoded:
+  	log0001.klog	200201011010100	4346
+Sent: info_request KL*13|38e83||4|33df at 233091
+Recv: info_response KL*14|38e85|address:269680640;size:15466496;used:90112|4|85f0 at 233122
+queued call_after  at 233122
+queued dir_list_request kaffelogic/roast-profiles  at 252236
+queued call_after  at 252236
+queued call_after  at 252236
+queued dir_list_request kaffelogic/roast-logs  at 252236
+queued call_after  at 252236
+queued call_after  at 252236
+queued info_request 
+queued call_after  at 252236
+Sent: dir_list_request KL*5|3d953|kaffelogic/roast-profiles||1|3a35 at 252244
+Recv: dir_list_response KL*6|3d96d|kaffelogic/roast-profiles|0|1|1|IAkwLTEyMDBtIFJURCB2MS4wLmtwcm8JMjAyMjA5MDczMTIzNTMzCTI4MDgNIAkwLTEyMDBtIFJlc3QgdjEuMC5rcHJvCTIwM... at 252320
+Recv: dir_list_response KL*6|3d98b|kaffelogic/roast-profiles|128|1|2|IAkyMDAwLTI3MDBtIFJURCB2MS4wLmtwcm8JMjAyMjA5MDczMTIzNTMzCTI4MDUNIAkyMDAwLTI3MDBtIFJlc3QgdjEuMC5... at 252336
+decoded:
+  	0-1200m RTD v1.0.kpro	202209073123533	2808
+ 	0-1200m Rest v1.0.kpro	202209073123533	2806
+ 	1200-1500 m Rest v1.0.kpro	202209073123533	2883
+ 	1200-1500m RTD v1.0.kpro	202209073123533	2703
+ 	1500-2000m RTD v1.0.kpro	202209073123533	2732
+ 	1500-2000m Rest v1.0.kpro	202209073123533	2880
+ 	2000-2700m RTD v1.0.kpro	202209073123533	2805
+ 	2000-2700m Rest v1.0.kpro	202209073123533	2749
+ 	Cupping v1.0.kpro	202209073123533	2500
+ 	Decaf v1.0.kpro	202209073123533	2718
+ 	Robusta v1.0.kpro	202209073123533	2609
+ 	Super dark v1.0.kpro	202209073123533	2380
+queued file_push C:\Users\Mimoja\Documents\kaffelogic\C35315\roast-profiles\1500-2000m Rest v1.0.kpro  at 252339
+queued file_push C:\Users\Mimoja\Documents\kaffelogic\C35315\roast-profiles\1200-1500 m Rest v1.0.kpro  at 252339
+queued file_push C:\Users\Mimoja\Documents\kaffelogic\C35315\roast-profiles\Decaf v1.0.kpro  at 252339
+queued file_push C:\Users\Mimoja\Documents\kaffelogic\C35315\roast-profiles\Robusta v1.0.kpro  at 252339
+queued file_push C:\Users\Mimoja\Documents\kaffelogic\C35315\roast-profiles\0-1200m Rest v1.0.kpro  at 252339
+queued file_push C:\Users\Mimoja\Documents\kaffelogic\C35315\roast-profiles\Super dark v1.0.kpro  at 252339
+queued file_push C:\Users\Mimoja\Documents\kaffelogic\C35315\roast-profiles\2000-2700m Rest v1.0.kpro  at 252339
+queued file_push C:\Users\Mimoja\Documents\kaffelogic\C35315\roast-profiles\1500-2000m RTD v1.0.kpro  at 252339
+queued file_push C:\Users\Mimoja\Documents\kaffelogic\C35315\roast-profiles\1200-1500m RTD v1.0.kpro  at 252339
+queued file_push C:\Users\Mimoja\Documents\kaffelogic\C35315\roast-profiles\2000-2700m RTD v1.0.kpro  at 252339
+queued file_push C:\Users\Mimoja\Documents\kaffelogic\C35315\roast-profiles\0-1200m RTD v1.0.kpro  at 252339
+queued file_push C:\Users\Mimoja\Documents\kaffelogic\C35315\roast-profiles\Cupping v1.0.kpro  at 252339
+Sent: file_push KL*9|3d9b4|kaffelogic/roast-profiles/1500-2000m Rest v1.0.kpro|1|202209073123816|1|cHJvZmlsZV9zaG9ydF9uYW1lOjE1MDAtMjAwM... at 252344
+Recv: packet_ack KL*1|3d9bc|3e94 at 252367
+Sent: KL*9|3d9b8|kaffelogic/roast-profiles/1500-2000m Rest v1.0.kpro|1|202209073123816|2|ZCB5b3Uga25vdyB5b3Ugd2lsbCBoYXZlIG5vI... at 252371
+Recv: packet_ack KL*1|3da00|a52e at 252445
+Sent: KL*9|3d9b9|kaffelogic/roast-profiles/1500-2000m Rest v1.0.kpro|1|202209073123816|3|b2ZpbGUgID0gMy4yIFJlY29tbWVuZGVkIEVuZ... at 252448
+Recv: packet_ack KL*1|3da1e|6354 at 252477
+Sent: KL*9|3d9bb|kaffelogic/roast-profiles/1500-2000m Rest v1.0.kpro|1|202209073123816|4|ZCBFbmQgKEdyZWF0IGZvciBFc3ByZXNzbyB3a... at 252494
+Recv: packet_ack KL*1|3da4c|2202 at 252522
+Sent: KL*9|3d9bc|kaffelogic/roast-profiles/1500-2000m Rest v1.0.kpro|1|202209073123816|5|dF9jaGVja19ncmFkaWVudF90aW1lOjMwLjANC... at 252528
+Recv: packet_ack KL*1|3da6d|d5f5 at 252555
+Sent: KL*9|3d9bd|kaffelogic/roast-profiles/1500-2000m Rest v1.0.kpro|1|202209073123816|6|eV90aW1lX3JhdGlvOjENCnJvYXN0X1BJRF9Lc... at 252558
+Recv: packet_ack KL*1|3da8c|5763 at 252585
+Sent: KL*9|3d9be|kaffelogic/roast-profiles/1500-2000m Rest v1.0.kpro|1|202209073123816|7|CnNwZWNpZmljX2hlYXRfYWRqX211bHRpcGxpZ... at 252594
+Recv: packet_ack KL*1|3dab0|9580 at 252616
+Sent: KL*9|3d9c2|kaffelogic/roast-profiles/1500-2000m Rest v1.0.kpro|1|202209073123816|8|X3NwZWVkOjE3MDAwDQpjb29sZG93bl9sb19zc... at 252618
+Recv: packet_ack KL*1|3dac9|1828 at 252648
+Sent: KL*9|3d9c3|kaffelogic/roast-profiles/1500-2000m Rest v1.0.kpro|1|202209073123816|9|LjU5NzA2MDQ1NSwxMjguODEyNjMwODcyLDE1M... at 252651
+Recv: packet_ack KL*1|3dae9|aa88 at 252679
+Sent: KL*9|3d9c5|kaffelogic/roast-profiles/1500-2000m Rest v1.0.kpro|129|202209073123816|10|bGU6MC4wLDE0NzAwLjAsMCwwLjAsMTguMC... at 252692
+Recv: file_push_ack KL*10|3db19|kaffelogic/roast-profiles/1500-2000m Rest v1.0.kpro|0|55fd at 252726
+Sent: file_push KL*9|3db38|kaffelogic/roast-profiles/1200-1500 m Rest v1.0.kpro|1|202209073123816|1|cHJvZmlsZV9zaG9ydF9uYW1lOjEyMDAtMTUw... at 252740
+Recv: packet_ack KL*1|3db47|7ba5 at 252772
+Sent: KL*9|3db44|kaffelogic/roast-profiles/1200-1500 m Rest v1.0.kpro|1|202209073123816|2|ZCB5b3Uga25vdyB5b3Ugd2lsbCBoYXZlIG5v... at 252776
+Recv: packet_ack KL*1|3db95|5f96 at 252850
+Sent: KL*9|3db46|kaffelogic/roast-profiles/1200-1500 m Rest v1.0.kpro|1|202209073123816|3|cHJvZmlsZSAgID0gMy4wIFJlY29tbWVuZGVk... at 252853
+Recv: packet_ack KL*1|3dbb3|5b0f at 252882
+Sent: KL*9|3db47|kaffelogic/roast-profiles/1200-1500 m Rest v1.0.kpro|1|202209073123816|4|ZW5kZWQgRW5kIChHcmVhdCBmb3IgRXNwcmVz... at 252894
+Recv: packet_ack KL*1|3dbdc|e710 at 252912
+Sent: KL*9|3db48|kaffelogic/roast-profiles/1200-1500 m Rest v1.0.kpro|1|202209073123816|5|aGVhdF9jaGVja19ncmFkaWVudF90aW1lOjMw... at 252916
+Recv: packet_ack KL*1|3dbf2|b4fe at 252943
+Sent: KL*9|3db49|kaffelogic/roast-profiles/1200-1500 m Rest v1.0.kpro|1|202209073123816|6|YnlfdGltZV9yYXRpbzoxDQpyb2FzdF9QSURf... at 252946
+Recv: packet_ack KL*1|3dc10|7f76 at 252974
+Sent: KL*9|3db49|kaffelogic/roast-profiles/1200-1500 m Rest v1.0.kpro|1|202209073123816|7|DQpzcGVjaWZpY19oZWF0X2Fkal9tdWx0aXBs... at 252977
+Recv: packet_ack KL*1|3dc2f|823f at 253005
+Sent: KL*9|3db4a|kaffelogic/roast-profiles/1200-1500 m Rest v1.0.kpro|1|202209073123816|8|X2hpX3NwZWVkOjE3MDAwDQpjb29sZG93bl9s... at 253008
+Recv: packet_ack KL*1|3dc4e|65cc at 253036
+Sent: KL*9|3db4b|kaffelogic/roast-profiles/1200-1500 m Rest v1.0.kpro|1|202209073123816|9|My4yNTg0ODE0NzgsMTQ3LjczOTUxMjczNywx... at 253041
+Recv: packet_ack KL*1|3dc6e|0bac at 253067
+Sent: KL*9|3db4c|kaffelogic/roast-profiles/1200-1500 m Rest v1.0.kpro|129|202209073123816|10|b2ZpbGU6MC4wLDE0NzAwLjAsMCwwLjAsM... at 253069
+Recv: file_push_ack KL*10|3dc92|kaffelogic/roast-profiles/1200-1500 m Rest v1.0.kpro|0|25ba at 253098
+Sent: file_push KL*9|3dcab|kaffelogic/roast-profiles/Decaf v1.0.kpro|1|202209073123816|1|cHJvZmlsZV9zaG9ydF9uYW1lOkRlY2FmDQpwcm9maWxlX2R... at 253104
+Recv: packet_ack KL*1|3dcb3|2dbb at 253129
+Sent: KL*9|3dcb0|kaffelogic/roast-profiles/Decaf v1.0.kpro|1|202209073123816|2|b3J0YW50IGZvciBkZXZlbG9wbWVudCBpbiBERUNBRlx2TWV... at 253140
+Recv: packet_ack KL*1|3dd05|e69e at 253222
+Sent: KL*9|3dcb1|kaffelogic/roast-profiles/Decaf v1.0.kpro|1|202209073123816|3|cmVhdCBmb3IgUG91ciBPdmVycyArIFBsdW5nZXJzIGFuZCB... at 253225
+Recv: packet_ack KL*1|3dd27|ee9c at 253253
+Sent: KL*9|3dcb2|kaffelogic/roast-profiles/Decaf v1.0.kpro|1|202209073123816|4|cmVoZWF0X25vbWluYWxfdGVtcGVyYXR1cmU6MjQwDQpwcmV... at 253256
+Recv: packet_ack KL*1|3dd46|6f0d at 253284
+Sent: KL*9|3dcb3|kaffelogic/roast-profiles/Decaf v1.0.kpro|1|202209073123816|5|OjIuNg0Kcm9hc3RfdGFyZ2V0X2luX2Z1dHVyZToyNS4wDQp... at 253294
+Recv: packet_ack KL*1|3dd6c|f027 at 253317
+Sent: KL*9|3dcb4|kaffelogic/roast-profiles/Decaf v1.0.kpro|1|202209073123816|6|dXJlX2xpbWl0OjE4MA0Kc3BlY2lmaWNfaGVhdF9hZGpfbG9... at 253322
+Recv: packet_ack KL*1|3dd87|295d at 253346
+Sent: KL*9|3dcb5|kaffelogic/roast-profiles/Decaf v1.0.kpro|1|202209073123816|7|bmUyX211bHRpcGxpZXJfS2Q6MQ0Kem9uZTJfYm9vc3Q6MQ0... at 253353
+Recv: packet_ack KL*1|3dda7|e902 at 253376
+Sent: KL*9|3dcb6|kaffelogic/roast-profiles/Decaf v1.0.kpro|1|202209073123816|8|NS42ODI0NzY1NzQsNTEuOTg4MjI1NjAyNiwxMDMuNDAyMjE... at 253380
+Recv: packet_ack KL*1|3ddcd|dc8e at 253408
+Sent: KL*9|3dcb7|kaffelogic/roast-profiles/Decaf v1.0.kpro|129|202209073123816|9|ODM2NjgsNTU4LjA3NTM0MjAwNCwyMjIuNDY1ODY2ODMsN... at 253411
+Recv: file_push_ack KL*10|3dde7|kaffelogic/roast-profiles/Decaf v1.0.kpro|0|3f4e at 253440
+Sent: file_push KL*9|3de00|kaffelogic/roast-profiles/Robusta v1.0.kpro|1|202209073123816|1|cHJvZmlsZV9zaG9ydF9uYW1lOlJvYnVzdGENCnByb2Zpb... at 253445
+Recv: packet_ack KL*1|3de08|e676 at 253471
+Sent: KL*9|3de05|kaffelogic/roast-profiles/Robusta v1.0.kpro|1|202209073123816|2|bSByb2FzdCBwcm9maWxlICA9IDMuMCBSZWNvbW1lbmRlZ... at 253474
+Recv: packet_ack KL*1|3de50|842f at 253548
+Sent: KL*9|3de06|kaffelogic/roast-profiles/Robusta v1.0.kpro|1|202209073123816|3|ZW5kZWQgRW5kIChHcmVhdCBmb3IgRXNwcmVzc28gd2l0a... at 253551
+Recv: packet_ack KL*1|3de6d|1f04 at 253579
+Sent: KL*9|3de07|kaffelogic/roast-profiles/Robusta v1.0.kpro|1|202209073123816|4|aGVja19ncmFkaWVudF90aW1lOjMwLjANCnByZWhlYXRfd... at 253593
+Recv: packet_ack KL*1|3de97|68d9 at 253610
+Sent: KL*9|3de07|kaffelogic/roast-profiles/Robusta v1.0.kpro|1|202209073123816|5|bzoxDQpyb2FzdF9QSURfS3A6MC43MTcyDQpyb2FzdF9QS... at 253613
+Recv: packet_ack KL*1|3deac|5dcd at 253641
+Sent: KL*9|3de08|kaffelogic/roast-profiles/Robusta v1.0.kpro|1|202209073123816|6|al9tdWx0aXBsaWVyX0tkOjQNCnpvbmUxX3RpbWVfc3Rhc... at 253644
+Recv: packet_ack KL*1|3deca|55cf at 253673
+Sent: KL*9|3de09|kaffelogic/roast-profiles/Robusta v1.0.kpro|1|202209073123816|7|bHRpcGxpZXJfS2Q6MQ0Kem9uZTNfYm9vc3Q6Mw0KY29yb... at 253679
+Recv: packet_ack KL*1|3deec|810d at 253703
+Sent: KL*9|3de0a|kaffelogic/roast-profiles/Robusta v1.0.kpro|1|202209073123816|8|Ni4xOTk1MjQ5NDA2LDY0LjI3ODUzNDI4MzIsODUuNjgwM... at 253706
+Recv: packet_ack KL*1|3df08|7daa at 253734
+Sent: KL*9|3de0b|kaffelogic/roast-profiles/Robusta v1.0.kpro|129|202209073123816|9|LDAuMCwxOC4wLDE0NzAwLjAsNjAuMCwxNDcwMC4wLDQ... at 253740
+Recv: file_push_ack KL*10|3df30|kaffelogic/roast-profiles/Robusta v1.0.kpro|0|4d65 at 253764
+Sent: file_push KL*9|3df45|kaffelogic/roast-profiles/0-1200m Rest v1.0.kpro|1|202209073123816|1|cHJvZmlsZV9zaG9ydF9uYW1lOjAtMTIwMG0gUmVz... at 253769
+Recv: packet_ack KL*1|3df4c|732f at 253795
+Sent: KL*9|3df49|kaffelogic/roast-profiles/0-1200m Rest v1.0.kpro|1|202209073123816|2|a25vdyB5b3Ugd2lsbCBoYXZlIG5vIGNvZmZlZSBh... at 253798
+Recv: packet_ack KL*1|3df94|a656 at 253874
+Sent: KL*9|3df4a|kaffelogic/roast-profiles/0-1200m Rest v1.0.kpro|1|202209073123816|3|ID0gMy4wIFJlY29tbWVuZGVkIEVuZCAoR3JlYXQg... at 253878
+Recv: packet_ack KL*1|3dfb3|91fe at 253906
+Sent: KL*9|3df4a|kaffelogic/roast-profiles/0-1200m Rest v1.0.kpro|1|202209073123816|4|ZCBFbmQgKEdyZWF0IGZvciBFc3ByZXNzbyB3aXRo... at 253908
+Recv: packet_ack KL*1|3dfd2|106f at 253936
+Sent: KL*9|3df4b|kaffelogic/roast-profiles/0-1200m Rest v1.0.kpro|1|202209073123816|5|Y2tfZ3JhZGllbnRfdGltZTozMC4wDQpwcmVoZWF0... at 253941
+Recv: packet_ack KL*1|3dff3|4d3e at 253966
+Sent: KL*9|3df4c|kaffelogic/roast-profiles/0-1200m Rest v1.0.kpro|1|202209073123816|6|aW86MQ0Kcm9hc3RfUElEX0twOjAuNzE3Mg0Kcm9h... at 253970
+Recv: packet_ack KL*1|3e010|3bc0 at 253997
+Sent: KL*9|3df4d|kaffelogic/roast-profiles/0-1200m Rest v1.0.kpro|1|202209073123816|7|dF9hZGpfbXVsdGlwbGllcl9LZDo0DQp6b25lMV90... at 254003
+Recv: packet_ack KL*1|3e031|6691 at 254028
+Sent: KL*9|3df4d|kaffelogic/roast-profiles/0-1200m Rest v1.0.kpro|1|202209073123816|8|Y29vbGRvd25fbG9fc3BlZWQ6MTUwMDANCmNvb2xk... at 254039
+Recv: packet_ack KL*1|3e055|18f5 at 254059
+Sent: KL*9|3df4e|kaffelogic/roast-profiles/0-1200m Rest v1.0.kpro|1|202209073123816|9|OTM3NDM3NzksMTYzLjc4MjE3NDE3MSw0MTQuOTc2... at 254063
+Recv: packet_ack KL*1|3e06c|e5bc at 254090
+Sent: KL*9|3df4f|kaffelogic/roast-profiles/0-1200m Rest v1.0.kpro|129|202209073123816|10|LDU1OC4wLDEzMjAwLjAsNjAwLjAsMTMyMDAuM... at 254092
+Recv: file_push_ack KL*10|3e090|kaffelogic/roast-profiles/0-1200m Rest v1.0.kpro|0|ec98 at 254120
+Sent: file_push KL*9|3e0a9|kaffelogic/roast-profiles/Super dark v1.0.kpro|1|202209073123816|1|cHJvZmlsZV9zaG9ydF9uYW1lOlN1cGVyIGRhcmsNCn... at 254125
+Recv: packet_ack KL*1|3e0b9|86c6 at 254167
+Sent: KL*9|3e0ad|kaffelogic/roast-profiles/Super dark v1.0.kpro|1|202209073123816|2|YXZvdXIgcmVzdWx0IHRocm91Z2ggYnJld2luZyBhbm... at 254170
+Recv: packet_ack KL*1|3e108|f3ed at 254245
+Sent: KL*9|3e0b2|kaffelogic/roast-profiles/Super dark v1.0.kpro|1|202209073123816|3|cmU6MjQwDQpwcmVoZWF0X21pbl9wb3dlcl9vZmZzZX... at 254249
+Recv: packet_ack KL*1|3e126|be82 at 254276
+Sent: KL*9|3e0b5|kaffelogic/roast-profiles/Super dark v1.0.kpro|1|202209073123816|4|bl9mdXR1cmU6MjUuMA0Kcm9hc3RfdXNlX3ByZWRpY3... at 254279
+Recv: packet_ack KL*1|3e145|5971 at 254307
+Sent: KL*9|3e0b7|kaffelogic/roast-profiles/Super dark v1.0.kpro|1|202209073123816|5|cGVjaWZpY19oZWF0X2Fkal9sb3dlcl90ZW1wZXJhdH... at 254310
+Recv: packet_ack KL*1|3e164|0420 at 254337
+Sent: KL*9|3e0ba|kaffelogic/roast-profiles/Super dark v1.0.kpro|1|202209073123816|6|OjENCnpvbmUyX2Jvb3N0OjANCmNvcm5lcjFfdGltZV... at 254341
+Recv: packet_ack KL*1|3e183|86b6 at 254368
+Sent: KL*9|3e0bc|kaffelogic/roast-profiles/Super dark v1.0.kpro|1|202209073123816|7|MzQuMjY3LDE5OC4zNzEwNjgxMjEsMTc2LjQ2ODE3OT... at 254373
+Recv: packet_ack KL*1|3e1a2|75d8 at 254401
+Sent: KL*9|3e0bd|kaffelogic/roast-profiles/Super dark v1.0.kpro|129|202209073123816|8|MTg5MjI3LDc1Ny4wODgyOTg4MiwyMzkuMzU0NTA0... at 254404
+Recv: file_push_ack KL*10|3e1c7|kaffelogic/roast-profiles/Super dark v1.0.kpro|0|9ee9 at 254432
+Sent: file_push KL*9|3e1e4|kaffelogic/roast-profiles/2000-2700m Rest v1.0.kpro|1|202209073123816|1|cHJvZmlsZV9zaG9ydF9uYW1lOjIwMDAtMjcwM... at 254440
+Recv: packet_ack KL*1|3e1ec|9496 at 254477
+Sent: KL*9|3e1e8|kaffelogic/roast-profiles/2000-2700m Rest v1.0.kpro|1|202209073123816|2|ZCB5b3Uga25vdyB5b3Ugd2lsbCBoYXZlIG5vI... at 254480
+Recv: packet_ack KL*1|3e24a|00d6 at 254570
+Sent: KL*9|3e1e9|kaffelogic/roast-profiles/2000-2700m Rest v1.0.kpro|1|202209073123816|3|PSAzLjIgUmVjb21tZW5kZWQgRW5kIChCcmlna... at 254574
+Recv: packet_ack KL*1|3e26c|08d4 at 254602
+Sent: KL*9|3e1ea|kaffelogic/roast-profiles/2000-2700m Rest v1.0.kpro|1|202209073123816|4|cCBub3Rlcylcdlx2DQpwcm9maWxlX3NjaGVtY... at 254604
+Recv: packet_ack KL*1|3e28b|20e4 at 254632
+Sent: KL*9|3e1eb|kaffelogic/roast-profiles/2000-2700m Rest v1.0.kpro|1|202209073123816|5|ZnV0dXJlOjMwLjANCnByZWhlYXRfbW9kZTo1D... at 254641
+Recv: packet_ack KL*1|3e2ae|792c at 254664
+Sent: KL*9|3e1ec|kaffelogic/roast-profiles/2000-2700m Rest v1.0.kpro|1|202209073123816|6|X0tpOjANCnJvYXN0X1BJRF9LZDozLjU1DQpyb... at 254666
+Recv: packet_ack KL*1|3e2c8|6faf at 254693
+Sent: KL*9|3e1ee|kaffelogic/roast-profiles/2000-2700m Rest v1.0.kpro|1|202209073123816|7|X3N0YXJ0OjAuMA0Kem9uZTFfdGltZV9lbmQ6M... at 254696
+Recv: packet_ack KL*1|3e2e6|fe00 at 254724
+Sent: KL*9|3e1f0|kaffelogic/roast-profiles/2000-2700m Rest v1.0.kpro|1|202209073123816|8|bl9sb190ZW1wZXJhdHVyZToxMDANCnJvYXN0X... at 254727
+Recv: packet_ack KL*1|3e305|68d9 at 254756
+Sent: KL*9|3e1f1|kaffelogic/roast-profiles/2000-2700m Rest v1.0.kpro|1|202209073123816|9|Nzc5LDIwNy40NjA0NDk2MTEsNDM3LjMxMjQ4N... at 254761
+Recv: packet_ack KL*1|3e327|60db at 254786
+Sent: KL*9|3e1f3|kaffelogic/roast-profiles/2000-2700m Rest v1.0.kpro|129|202209073123816|10|ODIuMDAzLDEzMjAwLjAsMCwwLjANCg==|a... at 254791
+Recv: file_push_ack KL*10|3e34c|kaffelogic/roast-profiles/2000-2700m Rest v1.0.kpro|0|4c52 at 254818
+Sent: file_push KL*9|3e362|kaffelogic/roast-profiles/1500-2000m RTD v1.0.kpro|1|202209073123816|1|cHJvZmlsZV9zaG9ydF9uYW1lOjE1MDAtMjAwMG... at 254824
+Recv: packet_ack KL*1|3e36b|4d51 at 254847
+Sent: KL*9|3e368|kaffelogic/roast-profiles/1500-2000m RTD v1.0.kpro|1|202209073123816|2|ZWVuIGRlc2lnbmVkIGZvciB0aGUgY29mZmVlIH... at 254851
+Recv: packet_ack KL*1|3e3b0|a782 at 254925
+Sent: KL*9|3e369|kaffelogic/roast-profiles/1500-2000m RTD v1.0.kpro|1|202209073123816|3|IHdpdGggbWVkaXVtIGJvZHkpXHZcdk1lZGl1bS... at 254928
+Recv: packet_ack KL*1|3e3ce|61f8 at 254957
+Sent: KL*9|3e36a|kaffelogic/roast-profiles/1500-2000m RTD v1.0.kpro|1|202209073123816|4|ZW11bGF0aW9uX21vZGU6MC4wDQpyZWNvbW1lbm... at 254959
+Recv: packet_ack KL*1|3e3ed|e069 at 254986
+Sent: KL*9|3e36a|kaffelogic/roast-profiles/1500-2000m RTD v1.0.kpro|1|202209073123816|5|ZWN0aW9uX2NvdW50OjUNCnByZWhlYXRfdGVtcG... at 254994
+Recv: packet_ack KL*1|3e410|f131 at 255017
+Sent: KL*9|3e36b|kaffelogic/roast-profiles/1500-2000m RTD v1.0.kpro|1|202209073123816|6|cm9hc3RfUElEX21heF9pOjANCnJvYXN0X1BJRF... at 255021
+Recv: packet_ack KL*1|3e42a|95ef at 255047
+Sent: KL*9|3e36c|kaffelogic/roast-profiles/1500-2000m RTD v1.0.kpro|1|202209073123816|7|aXBsaWVyX0twOjENCnpvbmUxX211bHRpcGxpZX... at 255051
+Recv: packet_ack KL*1|3e448|9368 at 255079
+Sent: KL*9|3e36c|kaffelogic/roast-profiles/1500-2000m RTD v1.0.kpro|1|202209073123816|8|ZW5kOjAuMA0KY29vbGRvd25faGlfc3BlZWQ6MT... at 255093
+Recv: packet_ack KL*1|3e474|8f55 at 255125
+Sent: KL*9|3e36d|kaffelogic/roast-profiles/1500-2000m RTD v1.0.kpro|129|202209073123816|9|NjYyNTUxLDIwMC45MDM3MTI3MzUsMzU1Ljcw... at 255128
+Recv: file_push_ack KL*10|3e4a4|kaffelogic/roast-profiles/1500-2000m RTD v1.0.kpro|0|a4f9 at 255172
+Sent: file_push KL*9|3e4c4|kaffelogic/roast-profiles/1200-1500m RTD v1.0.kpro|1|202209073123816|1|cHJvZmlsZV9zaG9ydF9uYW1lOjEyMDAtMTUwMG... at 255176
+Recv: packet_ack KL*1|3e4d6|eea9 at 255217
+Sent: KL*9|3e4c8|kaffelogic/roast-profiles/1200-1500m RTD v1.0.kpro|1|202209073123816|2|ZWVuIGRlc2lnbmVkIGZvciB0aGUgY29mZmVlIH... at 255221
+Recv: packet_ack KL*1|3e522|b8b7 at 255294
+Sent: KL*9|3e4c8|kaffelogic/roast-profiles/1200-1500m RTD v1.0.kpro|1|202209073123816|3|IHdpdGggbWVkaXVtIGJvZHkpXHZcdk1lZGl1bS... at 255300
+Recv: packet_ack KL*1|3e542|0a17 at 255324
+Sent: KL*9|3e4c9|kaffelogic/roast-profiles/1200-1500m RTD v1.0.kpro|1|202209073123816|4|DQplbXVsYXRpb25fbW9kZTowLjANCnJlY29tbW... at 255327
+Recv: packet_ack KL*1|3e55d|993e at 255356
+Sent: KL*9|3e4ca|kaffelogic/roast-profiles/1200-1500m RTD v1.0.kpro|1|202209073123816|5|ZGV0ZWN0aW9uX2NvdW50OjUNCnByZWhlYXRfdG... at 255358
+Recv: packet_ack KL*1|3e57d|f75e at 255387
+Sent: KL*9|3e4ca|kaffelogic/roast-profiles/1200-1500m RTD v1.0.kpro|1|202209073123816|6|CnJvYXN0X1BJRF9tYXhfaTowDQpyb2FzdF9QSU... at 255394
+Recv: packet_ack KL*1|3e5a0|d94b at 255418
+Sent: KL*9|3e4cb|kaffelogic/roast-profiles/1200-1500m RTD v1.0.kpro|1|202209073123816|7|dGlwbGllcl9LcDoxDQp6b25lMV9tdWx0aXBsaW... at 255421
+Recv: packet_ack KL*1|3e5bb|e8c6 at 255448
+Sent: KL*9|3e4cc|kaffelogic/roast-profiles/1200-1500m RTD v1.0.kpro|1|202209073123816|8|LDIxNy42LDIyMS44LDIyMi45LDIyNy44LDI0MQ... at 255451
+Recv: packet_ack KL*1|3e5d9|8823 at 255479
+Sent: KL*9|3e4cc|kaffelogic/roast-profiles/1200-1500m RTD v1.0.kpro|129|202209073123816|9|NzU0NzIsMzMxLjE4OTEyNjg5OCwxOTEuNjQ0... at 255493
+Recv: file_push_ack KL*10|3e655|kaffelogic/roast-profiles/1200-1500m RTD v1.0.kpro|0|f77e at 255602
+Sent: file_push KL*9|3e674|kaffelogic/roast-profiles/2000-2700m RTD v1.0.kpro|1|202209073123816|1|cHJvZmlsZV9zaG9ydF9uYW1lOjIwMDAtMjcwMG... at 255608
+Recv: packet_ack KL*1|3e67b|c624 at 255634
+Sent: KL*9|3e678|kaffelogic/roast-profiles/2000-2700m RTD v1.0.kpro|1|202209073123816|2|ZW4gZGVzaWduZWQgZm9yIHRoZSBjb2ZmZWUgcm... at 255640
+Recv: packet_ack KL*1|3e6c9|966f at 255711
+Sent: KL*9|3e679|kaffelogic/roast-profiles/2000-2700m RTD v1.0.kpro|1|202209073123816|3|dGggbWVkaXVtIGJvZHkpXHZcdk1lZGl1bS9MaW... at 255716
+Recv: packet_ack KL*1|3e6e1|ad66 at 255742
+Sent: KL*9|3e67a|kaffelogic/roast-profiles/2000-2700m RTD v1.0.kpro|1|202209073123816|4|dGlvbl9tb2RlOjAuMA0KcmVjb21tZW5kZWRfbG... at 255745
+Recv: packet_ack KL*1|3e6ff|631e at 255773
+Sent: KL*9|3e67b|kaffelogic/roast-profiles/2000-2700m RTD v1.0.kpro|1|202209073123816|5|bl9jb3VudDo1DQpwcmVoZWF0X3RlbXBlcmF0dX... at 255776
+Recv: packet_ack KL*1|3e71e|9ba7 at 255804
+Sent: KL*9|3e67b|kaffelogic/roast-profiles/2000-2700m RTD v1.0.kpro|1|202209073123816|6|X1BJRF9tYXhfaTowDQpyb2FzdF9QSURfaUxpbW... at 255808
+Recv: packet_ack KL*1|3e73d|c6f6 at 255834
+Sent: KL*9|3e67c|kaffelogic/roast-profiles/2000-2700m RTD v1.0.kpro|1|202209073123816|7|cl9LcDoxDQp6b25lMV9tdWx0aXBsaWVyX0tkOj... at 255841
+Recv: packet_ack KL*1|3e75f|1234 at 255865
+Sent: KL*9|3e67c|kaffelogic/roast-profiles/2000-2700m RTD v1.0.kpro|1|202209073123816|8|b2xkb3duX2hpX3NwZWVkOjE3MDAwDQpjb29sZG... at 255868
+Recv: packet_ack KL*1|3e77a|e5c3 at 255896
+Sent: KL*9|3e67d|kaffelogic/roast-profiles/2000-2700m RTD v1.0.kpro|1|202209073123816|9|LjMwMzQ2NTUyNywyMTAuMDY4MTQwOTE3LDE1NC... at 255899
+Recv: packet_ack KL*1|3e799|79d4 at 255927
+Sent: KL*9|3e67e|kaffelogic/roast-profiles/2000-2700m RTD v1.0.kpro|129|202209073123816|10|MC4wLDMwMC4wLDEzMjAwLjAsNTU4LjAsMTM... at 255928
+Recv: file_push_ack KL*10|3e7c4|kaffelogic/roast-profiles/2000-2700m RTD v1.0.kpro|0|9cf4 at 255974
+Sent: file_push KL*9|3e7e7|kaffelogic/roast-profiles/0-1200m RTD v1.0.kpro|1|202209073123816|1|cHJvZmlsZV9zaG9ydF9uYW1lOjAtMTIwMG0gUlRED... at 255979
+Recv: packet_ack KL*1|3e7f9|0b2b at 256020
+Sent: KL*9|3e7eb|kaffelogic/roast-profiles/0-1200m RTD v1.0.kpro|1|202209073123816|2|ZGVzaWduZWQgZm9yIHRoZSBjb2ZmZWUgcm9hc3RlZ... at 256023
+Recv: packet_ack KL*1|3e844|9937 at 256097
+Sent: KL*9|3e7ef|kaffelogic/roast-profiles/0-1200m RTD v1.0.kpro|1|202209073123816|3|ZWRpdW0gYm9keSlcdlx2TWVkaXVtL0xpZ2h0IHJvY... at 256099
+Recv: packet_ack KL*1|3e862|5df1 at 256128
+Sent: KL*9|3e7f3|kaffelogic/roast-profiles/0-1200m RTD v1.0.kpro|1|202209073123816|4|b25fbW9kZTowLjANCnJlY29tbWVuZGVkX2xldmVsO... at 256139
+Recv: packet_ack KL*1|3e889|9a0a at 256161
+Sent: KL*9|3e7f4|kaffelogic/roast-profiles/0-1200m RTD v1.0.kpro|1|202209073123816|5|dW50OjUNCnByZWhlYXRfdGVtcGVyYXR1cmVfcHJve... at 256166
+Recv: packet_ack KL*1|3e8a4|2c09 at 256191
+Sent: KL*9|3e7f6|kaffelogic/roast-profiles/0-1200m RTD v1.0.kpro|1|202209073123816|6|X2k6MA0Kcm9hc3RfUElEX2lMaW1pdEFwcGx5QXRaZ... at 256193
+Recv: packet_ack KL*1|3e8c0|8ead at 256221
+Sent: KL*9|3e7f8|kaffelogic/roast-profiles/0-1200m RTD v1.0.kpro|1|202209073123816|7|ZTFfbXVsdGlwbGllcl9LZDoxDQp6b25lMV9ib29zd... at 256225
+Recv: packet_ack KL*1|3e8de|fa77 at 256252
+Sent: KL*9|3e7f9|kaffelogic/roast-profiles/0-1200m RTD v1.0.kpro|1|202209073123816|8|X3NwZWVkOjE3MDAwDQpjb29sZG93bl9sb19zcGVlZ... at 256256
+Recv: packet_ack KL*1|3e8fd|a726 at 256284
+Sent: KL*9|3e7fb|kaffelogic/roast-profiles/0-1200m RTD v1.0.kpro|1|202209073123816|9|LjI0OTg1OTIwNywxOTAuNjk0MzQ1MTEzLDE0MS43O... at 256293
+Recv: packet_ack KL*1|3e924|5d23 at 256315
+Sent: KL*9|3e7fd|kaffelogic/roast-profiles/0-1200m RTD v1.0.kpro|129|202209073123816|10|LjAsNTU4LjAsMTMyMDAuMCw2MDAuMCwxMzIwMC... at 256316
+Recv: file_push_ack KL*10|3e940|kaffelogic/roast-profiles/0-1200m RTD v1.0.kpro|0|6f43 at 256346
+Sent: file_push KL*9|3e95b|kaffelogic/roast-profiles/Cupping v1.0.kpro|1|202209073123816|1|cHJvZmlsZV9zaG9ydF9uYW1lOkN1cHBpbmcNCnByb2Zpb... at 256352
+Recv: packet_ack KL*1|3e962|2b45 at 256376
+Sent: KL*9|3e960|kaffelogic/roast-profiles/Cupping v1.0.kpro|1|202209073123816|2|c2Vzc2luZyB0aGUgZGVmZWN0cyBvZiB0aGUgY29mZmVlI... at 256393
+Recv: packet_ack KL*1|3e9b9|75b1 at 256470
+Sent: KL*9|3e960|kaffelogic/roast-profiles/Cupping v1.0.kpro|1|202209073123816|3|ZWQgcG9zdCBmaXJzdCBjcmFjayBvbiBvcmlnaW5zIHRvI... at 256474
+Recv: packet_ack KL*1|3e9d7|e41e at 256501
+Sent: KL*9|3e961|kaffelogic/roast-profiles/Cupping v1.0.kpro|1|202209073123816|4|cGVyYXR1cmU6MjQwDQpwcmVoZWF0X21pbl9wb3dlcl9vZ... at 256503
+Recv: packet_ack KL*1|3e9f5|ec1c at 256531
+Sent: KL*9|3e962|kaffelogic/roast-profiles/Cupping v1.0.kpro|1|202209073123816|5|ZXRfaW5fZnV0dXJlOjI1LjANCnJvYXN0X3VzZV9wcmVka... at 256540
+Recv: packet_ack KL*1|3ea1a|05c1 at 256561
+Sent: KL*9|3e962|kaffelogic/roast-profiles/Cupping v1.0.kpro|1|202209073123816|6|CnNwZWNpZmljX2hlYXRfYWRqX2xvd2VyX3RlbXBlcmF0d... at 256564
+Recv: packet_ack KL*1|3ea33|037c at 256593
+Sent: KL*9|3e963|kaffelogic/roast-profiles/Cupping v1.0.kpro|1|202209073123816|7|ZDoxDQp6b25lMl9ib29zdDo0DQpjb3JuZXIxX3RpbWVfc... at 256598
+Recv: packet_ack KL*1|3ea54|284b at 256623
+Sent: KL*9|3e964|kaffelogic/roast-profiles/Cupping v1.0.kpro|1|202209073123816|8|OS41MTU0OTUyNDksMTU2LjM3MzIyNjY5OSwxNzQuMDE4N... at 256626
+Recv: packet_ack KL*1|3ea70|8aef at 256654
+Sent: KL*9|3e965|kaffelogic/roast-profiles/Cupping v1.0.kpro|129|202209073123816|9|MDAuMCw1ODIuMDAzLDEzMjAwLjAsMCwwLjANCg==|da... at 256655
+Recv: file_push_ack KL*10|3ea93|kaffelogic/roast-profiles/Cupping v1.0.kpro|0|d6e7 at 256686
+Sent: dir_list_request KL*5|3eacd|kaffelogic/roast-logs||1|d737 at 256717
+Recv: dir_list_response KL*6|3eacf|kaffelogic/roast-logs|128|1|1|IAlsb2cwMDAxLmtsb2cJMjAwMjAxMDExMDEwMTAwCTQzNDYN|13b8 at 256749
+decoded:
+  	log0001.klog	200201011010100	4346
+Sent: info_request KL*13|3eb0e||4|626e at 256782
+Recv: info_response KL*14|3eb18|address:269680640;size:15466496;used:90112|4|ad25 at 256812
+queued call_after  at 256834
+queued call_after  at 256835
+Connection lost
+SerialConnectionManagerThread exiting
+SerialRxThread exiting
+SerialConnectionManagerThread starting
+Serial ports on this computer:
+  COM4 (VID/PID=0x0/0x0)
+  COM5 (VID/PID=0x0/0x0)
+  COM7 (VID/PID=0x2e8a/0xa)
+  COM3 (VID/PID=0x0/0x0)
+Opening port COM7 (VID/PID=0x2e8a/0xa)
+Success: port COM7 open, waiting for connection request
+SerialRxThread starting
+Recv: connection_request KL*2|4c9ad|1|0|C35315|1|KN1007B|kaffelogic.com||512|192|7e9e|83e5 at 313803
+Sent: time_sync KL*3|4c9cb|10||202209073123918|1|e70e at 313804
+Recv: time_sync_ack KL*4|4c9cb|6c71 at 313835
+Connected ok
+queued info_request 
+Sent: info_request KL*13|4c9ee||9|3adc at 313838
+Recv: info_response KL*14|4c9ed|stage:0;time:0.000000;is_calibrating:0;is_manual:0;level:3.200000;air_speed_trim:1.000000;log_file_number:0;profile:K-logic clas... at 313866
+queued file_request  at 313874
+Sent: file_request KL*7|4ca15|last_connection_uuid|5b5b at 313878
+Recv: file_response KL*8|4ca15|last_connection_uuid|128|202209073123411|1|OTI2MmQ4YjAtMmVhMC0xMWVkLTg1NGMtMjg3ZmNmZWVlY2Yw|a81c at 313896
+queued dir_list_request kaffelogic/roast-logs  at 313957
+queued call_after  at 313959
+queued call_after  at 313959
+queued info_request 
+Sent: dir_list_request KL*5|4ca68|kaffelogic/roast-logs||1|08b5 at 313963
+queued dir_list_request kaffelogic/roast-profiles  at 313963
+queued call_after  at 313963
+queued call_after  at 313963
+queued call_after  at 313963
+Recv: dir_list_response KL*6|4ca6e|kaffelogic/roast-logs|128|1|1|IAlsb2cwMDAxLmtsb2cJMjAwMjAxMDExMDEwMTAwCTQzNDYN|5ac3 at 313989
+decoded:
+  	log0001.klog	200201011010100	4346
+Sent: info_request KL*13|4caa4||4|8c78 at 314020
+Recv: info_response KL*14|4caa7|address:269680640;size:15466496;used:90112|4|3610 at 314051
+Sent: dir_list_request KL*5|4cac4|kaffelogic/roast-profiles||1|3bef at 314053
+Recv: dir_list_response KL*6|4caea|kaffelogic/roast-profiles|0|1|1|IAkwLTEyMDBtIFJURCB2MS4wLmtwcm8JMjAyMjA5MDczMTIzODE2CTI4MDgNIAkwLTEyMDBtIFJlc3QgdjEuMC5rcHJvCTIwM... at 314129
+Recv: dir_list_response KL*6|4cafc|kaffelogic/roast-profiles|128|1|2|IAkyMDAwLTI3MDBtIFJURCB2MS4wLmtwcm8JMjAyMjA5MDczMTIzODE2CTI4MDUNIAkyMDAwLTI3MDBtIFJlc3QgdjEuMC5... at 314144
+decoded:
+  	0-1200m RTD v1.0.kpro	202209073123816	2808
+ 	0-1200m Rest v1.0.kpro	202209073123816	2806
+ 	1200-1500 m Rest v1.0.kpro	202209073123816	2883
+ 	1200-1500m RTD v1.0.kpro	202209073123816	2703
+ 	1500-2000m RTD v1.0.kpro	202209073123816	2732
+ 	1500-2000m Rest v1.0.kpro	202209073123816	2880
+ 	2000-2700m RTD v1.0.kpro	202209073123816	2805
+ 	2000-2700m Rest v1.0.kpro	202209073123816	2749
+ 	Cupping v1.0.kpro	202209073123816	2500
+ 	Decaf v1.0.kpro	202209073123816	2718
+ 	Robusta v1.0.kpro	202209073123816	2609
+ 	Super dark v1.0.kpro	202209073123816	2380
+queued call_after  at 314203
+queued call_after  at 314227
+queued info_request 
+Sent: info_request KL*13|4ce08||3|6a36 at 314889
+Recv: info_response KL*14|4ce0a|model:KN1007B;configuration:E;style:Standard;serial:C35315;platform:RP2040;board:7.5;bootloader:6;firmware:7.7.10.1548|3|097e... at 314918
+Connection lost
+SerialConnectionManagerThread exiting
+SerialRxThread exiting
+SerialConnectionManagerThread starting
+Serial ports on this computer:
+  COM4 (VID/PID=0x0/0x0)
+  COM5 (VID/PID=0x0/0x0)
+  COM7 (VID/PID=0x2e8a/0xa)
+  COM3 (VID/PID=0x0/0x0)
+Opening port COM7 (VID/PID=0x2e8a/0xa)
+Success: port COM7 open, waiting for connection request
+SerialRxThread starting
+Recv: connection_request KL*2|51464|1|0|C35315|1|KN1007B|kaffelogic.com||512|192|7e9f|4a6c at 332924
+Sent: time_sync KL*3|5147e|10||202209073123937|1|963f at 332926
+Recv: time_sync_ack KL*4|5147e|353a at 332954
+Connected ok
+queued info_request 
+Sent: info_request KL*13|514a9||9|9cee at 332969
+Recv: info_response KL*14|514a9|stage:0;time:0.000000;is_calibrating:0;is_manual:0;level:3.200000;air_speed_trim:1.000000;log_file_number:0;profile:K-logic clas... at 333000
+queued file_request  at 333005
+Sent: file_request KL*7|514cf|last_connection_uuid|34fe at 333007
+queued dir_list_request kaffelogic/roast-logs  at 333017
+queued call_after  at 333017
+queued call_after  at 333017
+queued info_request 
+queued dir_list_request kaffelogic/roast-profiles  at 333018
+queued call_after  at 333018
+queued call_after  at 333018
+queued call_after  at 333018
+Recv: file_response KL*8|514d0|last_connection_uuid|128|202209073123411|1|OTI2MmQ4YjAtMmVhMC0xMWVkLTg1NGMtMjg3ZmNmZWVlY2Yw|e85e at 333031
+Sent: dir_list_request KL*5|514eb|kaffelogic/roast-logs||1|4927 at 333035
+Recv: dir_list_response KL*6|514f2|kaffelogic/roast-logs|128|1|1|IAlsb2cwMDAxLmtsb2cJMjAwMjAxMDExMDEwMTAwCTQzNDYN|b8e8 at 333062
+decoded:
+  	log0001.klog	200201011010100	4346
+Sent: info_request KL*13|51535||4|222c at 333109
+Recv: info_response KL*14|51539|address:269680640;size:15466496;used:90112|4|e5c5 at 333139
+Sent: dir_list_request KL*5|51556|kaffelogic/roast-profiles||1|5828 at 333142
+Recv: dir_list_response KL*6|51571|kaffelogic/roast-profiles|0|1|1|IAkwLTEyMDBtIFJURCB2MS4wLmtwcm8JMjAyMjA5MDczMTIzODE2CTI4MDgNIAkwLTEyMDBtIFJlc3QgdjEuMC5rcHJvCTIwM... at 333216
+Recv: dir_list_response KL*6|5158e|kaffelogic/roast-profiles|128|1|2|IAkyMDAwLTI3MDBtIFJURCB2MS4wLmtwcm8JMjAyMjA5MDczMTIzODE2CTI4MDUNIAkyMDAwLTI3MDBtIFJlc3QgdjEuMC5... at 333232
+decoded:
+  	0-1200m RTD v1.0.kpro	202209073123816	2808
+ 	0-1200m Rest v1.0.kpro	202209073123816	2806
+ 	1200-1500 m Rest v1.0.kpro	202209073123816	2883
+ 	1200-1500m RTD v1.0.kpro	202209073123816	2703
+ 	1500-2000m RTD v1.0.kpro	202209073123816	2732
+ 	1500-2000m Rest v1.0.kpro	202209073123816	2880
+ 	2000-2700m RTD v1.0.kpro	202209073123816	2805
+ 	2000-2700m Rest v1.0.kpro	202209073123816	2749
+ 	Cupping v1.0.kpro	202209073123816	2500
+ 	Decaf v1.0.kpro	202209073123816	2718
+ 	Robusta v1.0.kpro	202209073123816	2609
+ 	Super dark v1.0.kpro	202209073123816	2380
+queued call_after  at 333289
+queued call_after  at 333289
+queued info_request 
+Sent: info_request KL*13|51879||3|dc3b at 333945
+Recv: info_response KL*14|51879|model:KN1007B;configuration:E;style:Standard;serial:C35315;platform:RP2040;board:7.5;bootloader:6;firmware:7.7.10.1548|3|7241... at 333975
+queued action_send 
+Sent: action_send KL*15|617b5|1|2|C35315|d7f4 at 399285
+Error in SerialRxThread <class 'serial.serialutil.SerialException'> ClearCommError failed (WindowsError(22, 'Das Ger\xe4t erkennt den Befehl nicht.'))
+SerialRxThread exiting
+Connection lost
+Opening port COM7 (VID/PID=0x2e8a/0xa)
+Success: port COM7 open, waiting for connection request
+SerialRxThread starting
+Recv: connection_request KL*2|9b2|1|0|C35315|1|KN1007B|kaffelogic.com||512|192|78b2|6899 at 402318
+Sent: time_sync KL*3|6238e|10||202209073124047|1|01dd at 402319
+Recv: time_sync_ack KL*4|6238e|28d6 at 402348
+Connected ok
+queued info_request 
+Sent: info_request KL*13|623bb||9|71bd at 402364
+Recv: info_response KL*14|623bb|stage:0;time:0.000000;is_calibrating:0;is_manual:0;level:3.200000;air_speed_trim:1.000000;log_file_number:0;profile:K-logic clas... at 402394
+queued file_request  at 402400
+Sent: file_request KL*7|623e1|last_connection_uuid|e8c9 at 402402
+queued dir_list_request kaffelogic/roast-logs  at 402411
+queued call_after  at 402411
+queued call_after  at 402411
+queued info_request 
+queued dir_list_request kaffelogic/roast-profiles  at 402411
+queued call_after  at 402411
+queued call_after  at 402411
+queued call_after  at 402411
+Recv: file_response KL*8|623ec|last_connection_uuid|128|202209073123411|1|OTI2MmQ4YjAtMmVhMC0xMWVkLTg1NGMtMjg3ZmNmZWVlY2Yw|9b59 at 402442
+Sent: dir_list_request KL*5|6240e|kaffelogic/roast-logs||1|e320 at 402448
+Recv: dir_list_response KL*6|62412|kaffelogic/roast-logs|128|1|1|IAlsb2cwMDAxLmtsb2cJMjAwMjAxMDExMDEwMTAwCTQzNDYN|cc5b at 402473
+decoded:
+  	log0001.klog	200201011010100	4346
+Sent: info_request KL*13|62449||4|1a1d at 402506
+Recv: info_response KL*14|62466|address:269680640;size:15466496;used:90112|4|2cc7 at 402552
+Sent: dir_list_request KL*5|62478|kaffelogic/roast-profiles||1|141d at 402553
+Recv: dir_list_response KL*6|6249c|kaffelogic/roast-profiles|0|1|1|IAkwLTEyMDBtIFJURCB2MS4wLmtwcm8JMjAyMjA5MDczMTIzODE2CTI4MDgNIAkwLTEyMDBtIFJlc3QgdjEuMC5rcHJvCTIwM... at 402644
+Recv: dir_list_response KL*6|624b9|kaffelogic/roast-profiles|128|1|2|IAkyMDAwLTI3MDBtIFJURCB2MS4wLmtwcm8JMjAyMjA5MDczMTIzODE2CTI4MDUNIAkyMDAwLTI3MDBtIFJlc3QgdjEuMC5... at 402660
+decoded:
+  	0-1200m RTD v1.0.kpro	202209073123816	2808
+ 	0-1200m Rest v1.0.kpro	202209073123816	2806
+ 	1200-1500 m Rest v1.0.kpro	202209073123816	2883
+ 	1200-1500m RTD v1.0.kpro	202209073123816	2703
+ 	1500-2000m RTD v1.0.kpro	202209073123816	2732
+ 	1500-2000m Rest v1.0.kpro	202209073123816	2880
+ 	2000-2700m RTD v1.0.kpro	202209073123816	2805
+ 	2000-2700m Rest v1.0.kpro	202209073123816	2749
+ 	Cupping v1.0.kpro	202209073123816	2500
+ 	Decaf v1.0.kpro	202209073123816	2718
+ 	Robusta v1.0.kpro	202209073123816	2609
+ 	Super dark v1.0.kpro	202209073123816	2380
+queued call_after  at 402693
+queued call_after  at 402693
+queued info_request 
+Sent: info_request KL*13|6279a||3|0254 at 403354
+Recv: info_response KL*14|627a0|model:KN1007B;configuration:E;style:Standard;serial:C35315;platform:RP2040;board:7.5;bootloader:6;firmware:7.7.10.1548|3|c1c4... at 403386
+queued action_send 
+Sent: action_send KL*15|639ff|4|2|C35315|2155 at 408063
+Error in SerialRxThread <class 'serial.serialutil.SerialException'> ClearCommError failed (WindowsError(22, 'Das Ger\xe4t erkennt den Befehl nicht.'))
+SerialRxThread exiting
+Connection lost
+Opening port COM7 (VID/PID=0x2e8a/0xa)
+Success: port COM7 open, waiting for connection request
+SerialRxThread starting
+Recv: connection_request KL*2|715|1|589856|C35315|1|KN1007B|kaffelogic.com||512|192|78b2|6195 at 410184
+Sent: time_sync KL*3|64249|10||202209073124054|1|cd7d at 410185
+Recv: time_sync_ack KL*4|64249|ad54 at 410215
+Connected ok
+queued info_request 
+Sent: info_request KL*13|64275||9|0864 at 410229
+Recv: info_response KL*14|64275|stage:0;time:0.000000;is_calibrating:0;is_manual:0;level:0.000000;air_speed_trim:0.000000;log_file_number:0;profile:;sassi_file_... at 410260
+queued info_request 
+Sent: info_request KL*13|64415||3|cb6b at 410645
+Recv: info_response KL*14|64415|model:KN1007B;configuration:J;style:Standard;serial:C35315;platform:RP2040;board:7.5;bootloader:6;firmware:7.7.10.1548|3|2b4d... at 410676

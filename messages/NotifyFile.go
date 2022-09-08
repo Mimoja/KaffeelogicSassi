@@ -3,6 +3,7 @@ package messages
 import (
 	"encoding/base64"
 	"fmt"
+	"log"
 	"strconv"
 	"time"
 )
@@ -10,7 +11,7 @@ import (
 type NotifyFile struct {
 	SassiMessage
 	FilePath       string
-	OutcomeCode    uint8
+	OutcomeCode    OutcomeCode
 	DateModified   time.Time
 	SequenceNumber uint16
 	Data           []byte
@@ -18,7 +19,7 @@ type NotifyFile struct {
 
 func NewNotifyFile(dev *SassiDev, timestamp int64,
 	FilePath string,
-	OutcomeCode uint8,
+	OutcomeCode OutcomeCode,
 	DateModified time.Time,
 	SequenceNumber uint16,
 	B64Data []byte,
@@ -42,14 +43,16 @@ func (r NotifyFile) ParsePipedFields() FullSassiMessage {
 	if err != nil {
 		panic(err)
 	}
-	r.OutcomeCode = uint8(oCode)
+	r.OutcomeCode = OutcomeCode(oCode)
 
-	dateModifiedString := r.Piped_fields[2]
+	if r.Piped_fields[2] != "" {
+		dateModifiedString := r.Piped_fields[2]
 
-	weekRemoved := dateModifiedString[:8] + dateModifiedString[9:]
-	r.DateModified, err = time.Parse("20060102150405", weekRemoved)
-	if err != nil {
-		panic(err)
+		weekRemoved := dateModifiedString[:8] + dateModifiedString[9:]
+		r.DateModified, err = time.Parse("20060102150405", weekRemoved)
+		if err != nil {
+			panic(err)
+		}
 	}
 
 	seq, err := strconv.ParseUint(r.Piped_fields[3], 10, 16)
@@ -57,9 +60,10 @@ func (r NotifyFile) ParsePipedFields() FullSassiMessage {
 		panic(err)
 	}
 	r.SequenceNumber = uint16(seq)
+
 	r.Data, err = base64.StdEncoding.DecodeString(r.Piped_fields[4])
 	if err != nil {
-		panic(err)
+		log.Panicf("%v:\n%s", err, r.Piped_fields[4])
 	}
 	return r
 }

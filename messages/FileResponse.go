@@ -10,7 +10,7 @@ import (
 type FileResponse struct {
 	SassiMessage
 	FilePath       string
-	OutcomeCode    uint8
+	OutcomeCode    OutcomeCode
 	DateModified   time.Time
 	SequenceNumber uint16
 	Data           []byte
@@ -18,7 +18,7 @@ type FileResponse struct {
 
 func NewFileResponse(dev *SassiDev, timestamp int64,
 	FilePath string,
-	OutcomeCode uint8,
+	OutcomeCode OutcomeCode,
 	DateModified time.Time,
 	SequenceNumber uint16,
 	B64Data []byte,
@@ -43,14 +43,16 @@ func (r FileResponse) ParsePipedFields() FullSassiMessage {
 	if err != nil {
 		panic(err)
 	}
-	r.OutcomeCode = uint8(oCode)
+	r.OutcomeCode = OutcomeCode(oCode)
 
-	dateModifiedString := r.Piped_fields[2]
+	if r.Piped_fields[2] != "" {
+		dateModifiedString := r.Piped_fields[2]
 
-	weekRemoved := dateModifiedString[:8] + dateModifiedString[9:]
-	r.DateModified, err = time.Parse("20060102150405", weekRemoved)
-	if err != nil {
-		panic(err)
+		weekRemoved := dateModifiedString[:8] + dateModifiedString[9:]
+		r.DateModified, err = time.Parse("20060102150405", weekRemoved)
+		if err != nil {
+			panic(err)
+		}
 	}
 
 	seq, err := strconv.ParseUint(r.Piped_fields[3], 10, 16)
@@ -58,9 +60,14 @@ func (r FileResponse) ParsePipedFields() FullSassiMessage {
 		panic(err)
 	}
 	r.SequenceNumber = uint16(seq)
-	r.Data, err = base64.StdEncoding.DecodeString(r.Piped_fields[4])
-	if err != nil {
-		panic(err)
+
+	if r.Piped_fields[4] != "" {
+		r.Data, err = base64.StdEncoding.DecodeString(r.Piped_fields[4])
+		if err != nil {
+			panic(err)
+		}
+	} else {
+		r.Data = []byte{}
 	}
 	return r
 }
